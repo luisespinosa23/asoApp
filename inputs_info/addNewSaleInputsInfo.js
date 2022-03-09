@@ -1,0 +1,61 @@
+export const addNewSaleInputsInfo = () => {
+  const inputs = [
+    {
+      name: "date",
+      element: "datePicker",
+      placeholder: "Fecha de venta",
+      isRequired: true,
+      label: "Ingrese la fecha de venta",
+      key: 1,
+      id: 1,
+    },
+    {
+      name: "customer",
+      element: "input",
+      placeholder: "Cliente",
+      isRequired: true,
+      label: "Ingrese el cliente",
+      type: "default",
+      isPassword: false,
+      key: 2,
+      id: 2,
+    },
+    {
+      name: "kgCollected",
+      element: "input",
+      placeholder: "Cantidad vendida (kg)",
+      isRequired: true,
+      label: "Ingrese la cantidad vendida (kg)",
+      type: "numeric",
+      isPassword: false,
+      key: 3,
+      id: 3,
+    },
+    {
+      name: "priceByKg",
+      element: "input",
+      placeholder: "Precio por kg",
+      isRequired: true,
+      label: "Ingrese el precio por kg",
+      type: "numeric",
+      isPassword: false,
+      key: 4,
+      id: 4,
+    },
+    {
+      name: "note",
+      element: "input",
+      placeholder: "Nota",
+      isRequired: false,
+      label: "Ingrese una nota",
+      type: "default",
+      isPassword: false,
+      multiline: true,
+      numberOfLines: 5,
+      key: 5,
+      id: 5,
+    },
+  ];
+
+  return inputs;
+};

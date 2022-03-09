@@ -1,0 +1,63 @@
+export const addNewFarmInputsInfo = () => {
+  const inputs = [
+    {
+      name: "farmName",
+      element: "input",
+      placeholder: "Nombre de la finca",
+      isRequired: true,
+      label: "Ingrese el nombre de la finca",
+      type: "default",
+      isPassword: false,
+      key: 1,
+      id: 1,
+    },
+    {
+      name: "ruralSettlementName",
+      element: "input",
+      placeholder: "Nombre de la vereda",
+      isRequired: false,
+      label: "Ingrese el nombre de la vereda",
+      type: "default",
+      isPassword: false,
+      key: 2,
+      id: 2,
+    },
+    {
+      name: "hectares",
+      element: "input",
+      placeholder: "Hectareas de la finca",
+      isRequired: true,
+      label: "Ingrese el numero de hectareas",
+      type: "numeric",
+      isPassword: false,
+      key: 3,
+      id: 3,
+    },
+    {
+      name: "hightSeal",
+      element: "input",
+      placeholder: "Altura sobre el nivel del mar",
+      isRequired: false,
+      label: "Ingrese la altura sobre el nivel del mar",
+      type: "numeric",
+      isPassword: false,
+      key: 4,
+      id: 4,
+    },
+    {
+      name: "note",
+      element: "input",
+      placeholder: "Nota",
+      isRequired: false,
+      label: "Ingrese una nota",
+      type: "default",
+      isPassword: false,
+      multiline: true,
+      numberOfLines: 5,
+      key: 5,
+      id: 5,
+    },
+  ];
+
+  return inputs;
+};

@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #317733;
+  --secondary-color: #78c141;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #444444;
+  --terciary-text-color: #999999;
+  --error-color: #ff4646;
+  --disabled-color: #c2c2c2;
+  --focus-color: rgb(0, 0, 0, 0.05);
+
+  --Input-width: 13.5rem;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16;
+}
+
+body {
+  margin: 0;
+  padding: 20;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.error-message {
+  min-height: 20;
+  display: inline-block;
+  color: var(--error-color);
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.required-input {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--terciary-text-color);
+  text-align: right;
+}
+
+.no-required-input {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--terciary-text-color);
+  text-align: right;
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-current {
+  background-color: var(--terciary-text-color);
+  color: var(--primary-text-color);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-daySelected {
+  background-color: var(--secondary-color);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-daySelected:hover {
+  background-color: var(--secondary-color);
+}
